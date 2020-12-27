@@ -8,7 +8,7 @@
 .home{
     height: 100vh;
     width: 100vw;
-    background-color: white;
+    
     position: absolute;
 }
 
@@ -16,19 +16,20 @@
     font-family: 'Hind Madurai', sans-serif;
     width: fit-content;
     height: fit-content;
-    margin-left: 50px;
-    margin-top: 50px;
+    margin-left: 90px;
+    margin-top: 40px;
     position: absolute;
     
   
 }
 
 .text h1{
-    font-size: 6em;
+    font-size: 7em;
     color: #017C80;
+    text-shadow: black 1px 2px;
 }
 .text h2{
-    font-size: 1.7em;
+    font-size: 2em;
     color: #575757;
     margin-top: -30px;
     
@@ -39,8 +40,72 @@
 
 
 .imagem{
-    width: 35%;
+    width: 40%;
     height: 100vh;
     float: right;
     position: relative;
+    display: flex;
+    
+ 
 }
+
+.imagem img{
+    height: 100vh;
+    width: 100%;
+    margin-top: 40px;
+   
+}
+
+
+.lista{
+    height: fit-content;
+    width: fit-content;
+    
+    bottom: 0;
+    position: absolute;
+   
+}
+
+li{
+    float: left;
+    list-style: none;
+   
+    
+}
+
+
+.arbusto{
+    width: 180px;
+    height: 200px;
+    margin-top:16vh;
+  
+}
+
+.homem{
+    width: 190px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 60px;
+
+}
+
+.mulher{
+    width: 150px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.seta{
+    position: absolute;
+    width: fit-content;
+    bottom: 40;
+    left: 49%;
+}
+
+
+.seta:hover{
+    transform:scale(1.05);
+    cursor: hand;
+    opacity: 0.9;
+}
+
