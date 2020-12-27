@@ -1,4 +1,6 @@
 
+let peso = 3;
+
 let IMC = 0;
 
 function calcularIMC(peso, altura) {
@@ -6,3 +8,6 @@ function calcularIMC(peso, altura) {
 }
 
 let altura = 4;
+
+
+
