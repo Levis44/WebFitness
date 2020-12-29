@@ -6,8 +6,7 @@ let genero = 0;
 
 const Masculino = document.querySelector('#masc');
 const Feminino = document.querySelector('#fem');
-Masculino.addEventListener('click', showNode);
-Feminino.addEventListener('click', showNode);
+
 
 function calcular() {
 
@@ -21,14 +20,12 @@ function calcular() {
 
     // Calcular IMC
     let imcCalculado = calcularIMC(peso, altura);
-    let imcFinal = formatarUmaCasa(imcCalculado);
-    console.log(imcFinal)
+    console.log(imcCalculado)
     // -Calcular IMC-
 
     // Calcular Agua
     let aguaCalculada = calcularAgua(peso);
-    let aguaFinal = formatarUmaCasa(aguaCalculada);
-    console.log(aguaFinal)
+    console.log(aguaCalculada)
     // -Calcular Agua-
 
     // Calcular TMB
@@ -40,29 +37,17 @@ function calcular() {
 
 
 function calcularIMC(peso, altura) {
-
-    return peso / altura ** 2;
-
+    const imcCalculado = peso / altura ** 2
+    return imcCalculado.toFixed(1);
 }
 
 function calcularAgua(peso) {
-
-    return peso * 0.035;
-
+    const pesoCalculado = peso * 0.035;
+    return pesoCalculado.toFixed(1);
 }
 
-function formatarUmaCasa(num) {
-    return num.toFixed(1)
-}
 
 function calcularTmb(genero, peso, altura, idade) {
-//**Homens devem utilizar a seguinte a fórmula:**
-
-//66,5 + (13,75 x Peso) + (5,0 x Altura em cm) – (6,8 x Idade).
-
-//**Enquanto isso, mulheres devem realizar a fórmula seguinte:**
-
-//665,1 + (9,56 x Peso) + (1,8 x Altura em cm) – (4,7 x Idade).
 
     alturaEmCm = altura * 100
 
@@ -75,12 +60,6 @@ function calcularTmb(genero, peso, altura, idade) {
     }
 }
 
-
-
-function showNode(e){
-    const textoLabelObtido = e.target.innerText;
-    return genero = textoLabelObtido;
-}
 
 function toggle(element) {
 
@@ -102,7 +81,6 @@ function toggle(element) {
     } else {
         genero = 1;
     }
-    calcular();
 }
 
 
