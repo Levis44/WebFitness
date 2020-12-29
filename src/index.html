@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/public/styles/style.css">
     <link rel="stylesheet" href="/public/styles/format.css">
     <link rel="stylesheet" href="/public/styles/info.css">
+    <link rel="stylesheet" href="/public/styles/form.css">
     <title>WebFitness </title>
 </head>
 
@@ -60,6 +61,40 @@
             </div>
     
         </div>
+    </section>
+
+    <section id="form">
+
+        <div class="planta">
+            <img src="/public/assets/Folhao.png" alt="Folha Grande">
+        </div>
+
+        <form action="">
+            <h1>Formulário</h1>
+            <div class="input">
+                <input type="text" id="altura" placeholder="Altura (m)">
+                <input type="text" id="peso" placeholder="Peso (kg)">
+                <input type="text" id="idade" placeholder="Idade">
+            </div>
+
+           <div class="radio">
+               <div class="macho">
+                <input type="radio" id="masc" name="gender" value="0">
+                <label for="male" class="genero">Masculino</label>
+               </div>
+                
+                <div class="femea">
+                    <label for="female" class="genero">Feminino</label>
+                    <input type="radio" id="feminino" name="gender" value="1">
+                </div>
+                
+           </div>
+            <div class="button">
+                <button onclick="calcular()">Calcular</button>
+            </div>
+           
+        </form>
+
     </section>
 
     
