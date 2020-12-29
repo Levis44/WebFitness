@@ -2,6 +2,12 @@
 let inputAltura = document.querySelector("#altura");
 let inputPeso = document.querySelector("#peso");
 let inputIdade = document.querySelector("#idade");
+let genero = 0;
+
+const Masculino = document.querySelector('#masc');
+const Feminino = document.querySelector('#fem');
+Masculino.addEventListener('click', showNode);
+Feminino.addEventListener('click', showNode);
 
 function calcular() {
 
@@ -26,7 +32,7 @@ function calcular() {
     // -Calcular Agua-
 
     // Calcular TMB
-    let genero = mostrarGenero();
+    
     let tmbFinal = calcularTmb(genero, peso, altura, idade)
     console.log(tmbFinal)
     // -Calcular TMB-
@@ -49,16 +55,6 @@ function formatarUmaCasa(num) {
     return num.toFixed(1)
 }
 
-function mostrarGenero() {
-    let rads = document.getElementsByName('gender')
-
-    for (var i = 0; i < rads.length; i++) {
-        if(rads[i].checked){
-            return rads[i].value ;
-        }
-    }
-}
-
 function calcularTmb(genero, peso, altura, idade) {
 //**Homens devem utilizar a seguinte a fórmula:**
 
@@ -78,6 +74,38 @@ function calcularTmb(genero, peso, altura, idade) {
         return calculo
     }
 }
+
+
+
+function showNode(e){
+    const textoLabelObtido = e.target.innerText;
+    return genero = textoLabelObtido;
+}
+
+function toggle(element) {
+
+    const Masc = document.querySelector("#masc")
+    const Fem = document.querySelector("#fem")
+
+    if (Masc.classList.contains("escolhido")){
+        Fem.classList.add("escolhido");
+        Masc.classList.remove("escolhido");
+    } else if (Fem.classList.contains("escolhido")) {
+        Fem.classList.remove("escolhido");
+        Masc.classList.add("escolhido");
+    } else {
+        element.classList.add("escolhido");
+    }
+
+    if (Masc.classList.contains("escolhido")){
+        genero = 0;
+    } else {
+        genero = 1;
+    }
+    calcular();
+}
+
+
 
 
 

@@ -44,14 +44,45 @@
     justify-content: space-between;
 }
 
-.genero {
+  .genero {
     font-weight: bold;
     font-size: 1.5rem;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    
 }
 
-input[type=radio] {
-    background-color: #3E1C1C;
+/* label {
+    padding: 5px 15px 5px 51px;
 }
+
+label:before {
+    content: "";
+    width: 17px;
+    height: 17px;
+    display: inline-block;
+    background: none;
+    border: 3px solid #000;
+    border-radius: 50%;
+    position: absolute;
+    left: 17px;
+    top: 12px;
+    background-color: white;
+}
+
+
+input[type=radio] {
+   display: none;
+}
+
+input[type="radio"]:checked + label:before {
+    display: none;
+}  */
+
+
+        
+
 .button {
     display: flex;
     
@@ -65,4 +96,9 @@ button {
     color: white;
     border-radius: 10px;
     margin: 0 auto;
+}
+
+
+.escolhido {
+    color: white;
 }
