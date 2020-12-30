@@ -32,7 +32,7 @@
 }
 
 .cima {
-    height: 30%;
+    height: 20%;
     width: 100%;
     background-color:black;
     display: flex;
@@ -53,3 +53,96 @@
 #azul {
     background-color: #086063;
 }
+
+.icone{
+    width: 100%;
+    height: 35%;
+    margin-top: 7%;
+}
+
+.icone img{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    width: 30%;
+    object-fit: cover;
+
+
+    
+}
+
+
+.icone h1{
+    text-align: center;
+    font-size: 2.8em;
+    margin-top: 2%;
+    text-shadow: black 1px 1px;
+}
+
+
+.cima img{
+    margin: 0 auto;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cima:hover{
+    animation-name: texto;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+
+}
+
+.cima:not(:hover){
+    animation-name: texto-volta;
+    animation-duration: 0.7s;
+   
+
+}
+
+@keyframes texto-volta{
+    0%{
+        height: 50%;
+    }
+   
+    100%{
+        height: 20%;
+        
+    }
+}
+
+
+@keyframes texto{
+    0%{
+        height: 20%;
+    }
+   
+    100%{
+        height: 50%;
+        
+    }
+}
+
+
+.cima img:hover{
+    animation-name: seta;
+    animation-duration: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes seta{
+    0%{
+        transform: rotate(0);
+    }
+
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
