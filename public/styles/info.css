@@ -103,15 +103,24 @@
 
 .cima:hover img{
     animation-name: seta;
-    animation-duration: .5s;
+    animation-duration: 550ms;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 
 }
 
+.cima:hover p{
+    animation-name: texto;
+    animation-delay: 100ms;
+    animation-duration: 1000ms;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+
+}
+
 .cima:not(:hover) img {
     animation-name: seta-volta;
-    animation-duration: .5s;
+    animation-duration: .7s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
 
@@ -154,12 +163,10 @@
 @keyframes seta{
     0%{
         transform: rotate(0);
-        transform: translateY(0px);
     }
 
     100%{
-        transform: rotate(180deg);
-        transform: translateY(200px);
+        transform: rotate(180deg) translateY(200%); 
         
     }
 }
@@ -173,11 +180,51 @@
 
     @keyframes seta-volta{
         0%{
-            transform: rotate(180deg);
+            transform: rotate(180deg) translateY(200%);
         }
     
         100%{
-            transform: rotate(0deg);
+            transform: rotate(0deg) translateY(0%);
         }
 }
 
+.cima p{
+    color:transparent;
+    font-size: 0.01px;
+}
+
+
+@keyframes texto{
+    100%{
+        font-size: 1em;
+        text-shadow: black 1px;
+        color: black;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        height: 50%;
+        position: absolute;
+
+    }
+}
+
+.textoo{
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 5%;
+}
+
+.textoo p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
