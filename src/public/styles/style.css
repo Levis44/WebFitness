@@ -16,12 +16,12 @@
 }
 
 .text h1{
-    font-size: 7em;
+    font-size: 10rem;
     color: #017C80;
     text-shadow: black 1px 2px;
 }
 .text h2{
-    font-size: 2em;
+    font-size: 3.1rem;
     color: #575757;
     margin-top: -30px;
     
@@ -37,14 +37,18 @@
     float: right;
     position: relative;
     display: flex;
+    bottom: 0;
+   
 
 }
 
 .imagem img{
     height: 100vh;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 0 auto;
     object-fit: cover;
+    
+    bottom: 0;
 }
 
 
@@ -64,7 +68,10 @@ li{
      
 }
 
-
+.arbustodiv{
+    bottom: 0;
+    position: absolute;
+}
 
 
 .arbusto{
@@ -72,16 +79,18 @@ li{
     height: 220px;
     margin-top:16vh;
     float: left;
-    
-    vertical-align: bottom;
+    position: relative;
+    bottom: 0px auto;
+ 
   
 }
 
 .homem{
     width: 220px;
     height: 320px;
-   float: left;
-    margin-left: 20px;
+    float: left;
+    margin-left: 20%;
+    
     
     
 
@@ -93,7 +102,7 @@ li{
     float: left;
     margin-left: 20px;
     display: flex;
-    
+   
     bottom: 0;
     
 }

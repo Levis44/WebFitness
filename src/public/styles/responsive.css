@@ -2,4 +2,142 @@
     .imagem {
         display: none;
     }
+
+    .homem{
+        
+        margin-left: 15%;
+        
+    }
+
+    .arbusto{
+        display: none;
+    }
+    
+    .mulher{
+        float: right;
+        margin-right: 20%;
+        
+    }
+
+    .lista{
+        width: 100%;
+    }
+
+    .text{
+        display: block;
+        justify-content: center;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 5%;
+
+    }
+
+    .text h1{
+        font-size: 12rem;
+    }
+
+}
+
+
+
+@media (max-width: 805px) {
+    .arbusto{
+        display: none;
+    }
+
+   
+    @keyframes texto{
+        100%{
+            font-size: 1.3rem;
+            text-shadow: black 1px;
+            color: black;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 50%;
+            position: absolute;
+    
+        }
+    }
+
+    .mulher{
+        margin-right: 19%;
+       
+    }
+
+    .planta{
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+      
+        object-fit: cover;
+    }
+
+}
+
+
+@media (max-width: 425px){
+
+    .homem{
+        display: none;
+    }
+
+    .mulher{
+        display: none;
+    }
+
+    .planta{
+       display: none;
+    }
+
+    .seta{
+        margin: 0 auto;
+        display: flex;
+        text-align: center;
+        width: 3vw;
+        justify-content: center;
+
+    }
+
+    .text h1{
+        line-height: 10rem;
+        font-size: 10rem;
+    }
+
+    .text h2{
+        line-height: 14rem;
+        font-size: 3rem;
+
+    }
+
+    .text{
+        top: 10%;
+    }
+
+    @keyframes texto{
+        100%{
+            font-size: 0.9rem;
+            text-shadow: black 1px;
+            color: black;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 50%;
+            position: absolute;
+    
+        }
+    }
+    
+
+    .icone h1{
+        font-size: 3rem;
+    }
+
+    .icone{
+        margin-top: 30%;
+    }
 }
